@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de programacion</title>
+    <link rel="stylesheet" href="/SRC/Style/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de programacion</h1>
+    </header>
+    <main>
+        <p class="bienvenida">Bienvenido al curso de programacion</p>
+        <p class="bienvenida">Este es un curso básico de programacion en HTML, CSS y JavaScript, de estudio personal</p>
+        <form action="/enviar_datos" method="POST">
+            <label for="tarea_curso">Tarea:</label>
+            <input type="text" id="tarea_curso" name="tarea" required>
+            <label for="descripcion">Descripción de la tarea:</label>
+            <input type="text" id="descripcion" name="descripcion" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <section>
+            <h2>Lista de tareas</h2>
+        <ul id="lista-tareas">
+            <!-- Las tareas se agregarán aquí mediante JavaScript -->
+            <li class="tarea completada">Ejemplo de tarea 1</li>
+            <li class="tarea">Ejemplo de tarea 2</li>
+            <li class="tarea completada">Ejemplo de tarea destacada</li>
+        </ul>
+        </section>
+        <p class="caja_prueba">Estoy probando un modelo de caja</p>
+    </main>
+
+    <script src="/SRC/JS/Script.js"></script>
+    
+</body>
+</html>

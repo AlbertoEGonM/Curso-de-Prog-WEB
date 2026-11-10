@@ -37,8 +37,13 @@ Bitácora de práctica con la página «Curso de programación». El proyecto re
 - **Resultado:** con `border-box`, los diagramas de Chrome mostraron un ancho total de `300px` en la vista amplia y de `264px` en la vista de `320px`. En la vista estrecha el texto pasó a dos líneas y la caja dejó de sobresalir de `main`.
 - **Idea clave:** para calcular el ancho se cuentan los bordes y el padding de izquierda y derecha. `border-box` los incluye en el ancho declarado; `max-width` permite reducirlo cuando falta espacio.
 
-## Clase 6 — Flexbox para el formulario · pendiente de práctica
+## Clase 6 — Flexbox y formulario adaptable
 
-- **Tema:** hijos directos de un contenedor, `display: flex`, `flex-direction` y `gap`.
-- **Próximo ejercicio:** agrupar cada pareja de etiqueta y campo, organizar el formulario en columna y probar después una distribución en fila cuando haya espacio.
-- **Comprobación prevista:** comparar una vista de `320px` con una ventana amplia y comprobar que las etiquetas siguen enfocando sus campos.
+- **Tema:** hijos directos de un contenedor Flexbox, `display: flex`, `flex-direction`, `gap` y consultas de medios.
+- **Práctica:** agrupar cada etiqueta con su campo y organizar los dos grupos y el botón en columna por defecto y en fila desde `800px`.
+- **Resultado:** las capturas de Chrome muestran la columna a `799px` y la fila a `800px`. La consulta de medios cambia solo la dirección y el `gap: 16px` se mantiene desde la regla base. Queda por comprobar el foco al pulsar las etiquetas.
+- **Idea clave:** Flexbox distribuye los hijos directos. Dentro de `@media` basta con declarar las propiedades que deben cambiar.
+
+## Clase 7 — JavaScript: DOM y eventos · próxima clase
+
+- **Próximo ejercicio:** escuchar el envío del formulario y añadir una tarea a la lista desde JavaScript.

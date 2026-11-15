@@ -44,6 +44,10 @@ Bitácora de práctica con la página «Curso de programación». El proyecto re
 - **Resultado:** las capturas de Chrome muestran la columna a `799px` y la fila a `800px`. La consulta de medios cambia solo la dirección y el `gap: 16px` se mantiene desde la regla base. Queda por comprobar el foco al pulsar las etiquetas.
 - **Idea clave:** Flexbox distribuye los hijos directos. Dentro de `@media` basta con declarar las propiedades que deben cambiar.
 
-## Clase 7 — JavaScript: DOM y eventos · próxima clase
+## Clase 7 — JavaScript: DOM y eventos
 
-- **Próximo ejercicio:** escuchar el envío del formulario y añadir una tarea a la lista desde JavaScript.
+- **Tema:** seleccionar elementos con `querySelector`, escuchar `submit`, cancelar el envío normal con `preventDefault()` y leer los campos con `.value`.
+- **Práctica:** crear un `<li>` con el nombre y la descripción de la tarea, añadirlo al `<ul>` con `append()` y aplicarle la clase `tarea` con `classList.add()`.
+- **Resultado:** una captura de Chrome confirma que un envío añade la tarea a la lista sin salir de la página y que el elemento nuevo tiene el estilo de una tarea pendiente.
+- **Idea clave:** el selector con `#` busca por `id`, no por `name`. Crear el elemento dentro del listener permite generar uno nuevo en cada envío; llamar a `append()` sobre el `<ul>` lo coloca en la lista.
+- **Próxima tarea:** comprobar dos envíos consecutivos sin recargar y vaciar los campos después de añadir cada tarea.
